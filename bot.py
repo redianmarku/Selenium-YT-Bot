@@ -18,7 +18,7 @@ def youtube_login(email,password):
 	op.add_argument('--headless')
 	op.add_argument('--disable-dev-shm-usage')
 	op.add_argument('--no-sandbox')
-	driver = webdriver.Chrome(executable_path= r'C:\Users\redi1\Desktop\BotYT\chromedriver.exe')
+	driver = webdriver.Chrome(executable_path= r'C:\Users\redi1\Desktop\Selenium-YT-Bot\chromedriver.exe')
 	driver.get('https://accounts.google.com/ServiceLogin?hl=en&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fhl%3Den%26feature%3Dsign_in_button%26app%3Ddesktop%26action_handle_signin%3Dtrue%26next%3D%252F&uilel=3&passive=true&service=youtube#identifier')
 
 	driver.find_element_by_id('identifierId').send_keys(email)
@@ -73,7 +73,7 @@ def comment_page(driver,urls,comment):
 
 
 def random_comment():
-
+# You can edit these lines=======
 	messages = [
 		'Whats up!',
 		'Nice video!',
@@ -83,7 +83,7 @@ def random_comment():
 		'Wanna be frieds?',
 		'Great video'
 	]
-	
+# ===============================
 	r = np.random.randint(0, len(messages))
 
 	return messages[r]
@@ -98,10 +98,10 @@ def check_exists_by_xpath(driver,xpath):
     return True
 
 if __name__ == '__main__':
-
-	email = 'redianmarkudev@gmail.com'
+# You should edit these lines=======
+	email = 'redian1marku@gmail.com'
 	password = 'realitet1'
-
+# ==================================
 
 	urls = [
 	  'https://www.youtube.com/watch?v=Szww2_VqEKs&t',
