@@ -99,8 +99,8 @@ def check_exists_by_xpath(driver,xpath):
 
 if __name__ == '__main__':
 # You should edit these lines=======
-	email = 'redian1marku@gmail.com'
-	password = 'realitet1'
+	email = 'youremail@gmail.com'
+	password = 'passxxxxxxx'
 # ==================================
 
 	urls = [
