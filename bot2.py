@@ -3,7 +3,7 @@ import requests
 
 keyword = str(input("Put your Keyword:"))
 
-res = requests.get('https://www.youtube.com/results?search_query=' + keyword)
+res = requests.get('https://www.youtube.com/results?search_query=' + keyword + '&sp=EgIIAQ%253D%253D')
 soup = BeautifulSoup(res.text, 'html.parser')
 
 results = soup.find_all('a',{'class':'yt-uix-tile-link'})
